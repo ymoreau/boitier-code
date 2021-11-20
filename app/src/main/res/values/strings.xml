@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Boitier Code</string>
+
+    <string name="Home_ButtonContinue">Reprendre la série</string>
+    <string name="Home_ButtonResults">Revoir les résultats</string>
+    <string name="Home_ButtonStart">Nouvelle série</string>
+    <string name="Home_ButtonSettings">Options</string>
+    <string name="Home_ButtonHelp">Aide</string>
+
+    <string name="Boitier_ButtonLabelA">A</string>
+    <string name="Boitier_ButtonLabelB">B</string>
+    <string name="Boitier_ButtonLabelC">C</string>
+    <string name="Boitier_ButtonLabelD">D</string>
+    <string name="Boitier_ButtonLabelClear">Correction</string>
+    <string name="Boitier_ButtonLabelValidate">Valider</string>
+
+    <string name="Results_ErrorsCountLabel">fautes</string>
+    <string name="Results_ValidateButtonLabel">Fermer</string>
+
+    <string name="PrefGroup_serie">Options de série</string>
+    <string name="Pref_pedagogic">Mode pédagogique</string>
+    <string name="Pref_pedagogicSummary">Corriger à chaque question</string>
+    <string name="Pref_questionCount">Nombre de questions</string>
+    <string name="helpActivityTitle">Aide</string>
+    <string name="settingsActivityTitle">Options</string>
+    <string name="resultsActivityTitle">Résultats</string>
+
+</resources>

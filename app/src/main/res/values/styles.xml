@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Title" parent="@android:style/TextAppearance">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:shadowColor">#192A42</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">0.1</item>
+    </style>
+
+    <style name="RichText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

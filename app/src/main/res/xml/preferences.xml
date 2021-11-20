@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/PrefGroup_serie"
+        android:key="pref_group_serie">
+
+        <CheckBoxPreference
+            android:key="pref_pedagogic"
+            android:title="@string/Pref_pedagogic"
+            android:summary="@string/Pref_pedagogicSummary"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="pref_questionsCount"
+            android:entries="@array/questionCount"
+            android:summary="40"
+            android:entryValues="@array/questionCount"
+            android:title="@string/Pref_questionCount" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

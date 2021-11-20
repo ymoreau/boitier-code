@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BoiterQuestionLabel" parent="@android:style/TextAppearance">
+        <item name="android:gravity">center</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">80sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BoiterAnswerLabel" parent="@android:style/TextAppearance">
+        <item name="android:gravity">center</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BoiterToolButton" parent="@android:style/TextAppearance">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="BoiterQuestionButton" parent="@android:style/TextAppearance">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
