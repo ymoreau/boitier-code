@@ -56,6 +56,11 @@ public class BoitierActivity extends Activity {
         initializeViewReferences();
         initializeListeners();
 
+        // Hide the title/menu bar
+        if (getActionBar() != null) {
+            getActionBar().hide();
+        }
+
         // Pedagogic dialog initialization
         pedagogicDialog = new AlertDialog.Builder(this);
 

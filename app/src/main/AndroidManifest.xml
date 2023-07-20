@@ -27,7 +27,6 @@
             android:launchMode="singleTop"
             android:stateNotNeeded="true"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
         </activity>
 
