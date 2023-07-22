@@ -30,7 +30,7 @@ public final class DataModel
         answersCount = count;
         currentAnswer = 1;
 
-        answers = new Vector<Answer>(answersCount);
+        answers = new Vector<>(answersCount);
         for(int i=0; i<answersCount; ++i)
             answers.add(i, new Answer());
 

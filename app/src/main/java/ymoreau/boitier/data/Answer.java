@@ -1,4 +1,5 @@
 package ymoreau.boitier.data;
+import androidx.annotation.NonNull;
 
 /**
  * Holds an answer attributes.
@@ -6,7 +7,6 @@ package ymoreau.boitier.data;
  */
 public final class Answer
 {
-
     private boolean A;
     private boolean B;
     private boolean C;
@@ -65,6 +65,7 @@ public final class Answer
     public boolean isCorrect()
     { return isCorrect; }
 
+    @Override @NonNull
     public String toString()
     {
         StringBuilder s = new StringBuilder();

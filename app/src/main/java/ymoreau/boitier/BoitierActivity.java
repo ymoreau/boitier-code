@@ -202,7 +202,7 @@ public class BoitierActivity extends Activity {
         if (isPedagogic) {
             pedagogicDialog.setMessage("Question " + DataModel.ref().currentAnswerNumber()
                     + "\nVotre réponse : "
-                    + DataModel.ref().currentAnswer().toString());
+                    + DataModel.ref().currentAnswer());
             pedagogicDialog.show();
         } else {
             endQuestion();

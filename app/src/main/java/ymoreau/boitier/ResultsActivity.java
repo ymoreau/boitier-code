@@ -48,7 +48,7 @@ public class ResultsActivity extends Activity {
         String[] answers = DataModel.ref().resultStrings();
         int answersCount = answers.length;
 
-        listView.setAdapter(new ArrayAdapter<String>(this,
+        listView.setAdapter(new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_multiple_choice, answers));
         listView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
 
