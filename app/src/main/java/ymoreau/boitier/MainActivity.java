@@ -50,36 +50,11 @@ public class MainActivity extends Activity
 
     private void initializeListeners()
     {
-        buttonContinue.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v) {
-                continueSerie();
-            }
-        });
-        buttonResults.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v) {
-                showResults();
-            }
-        });
-        buttonStart.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v) {
-                startSerie();
-            }
-        });
-        buttonSettings.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v) {
-                openSettings();
-            }
-        });
-        buttonHelp.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v) {
-                openHelp();
-            }
-        });
+        buttonContinue.setOnClickListener(v -> continueSerie());
+        buttonResults.setOnClickListener(v -> showResults());
+        buttonStart.setOnClickListener(v -> startSerie());
+        buttonSettings.setOnClickListener(v -> openSettings());
+        buttonHelp.setOnClickListener(v -> openHelp());
     }
 
     // Actions

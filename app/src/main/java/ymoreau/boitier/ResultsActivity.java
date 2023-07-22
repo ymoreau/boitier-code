@@ -2,9 +2,6 @@ package ymoreau.boitier;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckedTextView;
@@ -65,19 +62,13 @@ public class ResultsActivity extends Activity {
     }
 
     private void initializeListeners() {
-        buttonValidate.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                validate();
-            }
-        });
-        listView.setOnItemClickListener(new OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                CheckedTextView checkedTextView = view.findViewById(android.R.id.text1);
+        buttonValidate.setOnClickListener(v -> validate());
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            CheckedTextView checkedTextView = view.findViewById(android.R.id.text1);
 
-                DataModel.ref().answer(position).setCorrect(checkedTextView.isChecked());
+            DataModel.ref().answer(position).setCorrect(checkedTextView.isChecked());
 
-                refreshErrorsCountText();
-            }
+            refreshErrorsCountText();
         });
     }
 

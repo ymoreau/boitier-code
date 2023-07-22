@@ -2,10 +2,8 @@ package ymoreau.boitier;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -64,17 +62,13 @@ public class BoitierActivity extends Activity {
         // Pedagogic dialog initialization
         pedagogicDialog = new AlertDialog.Builder(this);
 
-        pedagogicDialog.setNegativeButton("Incorrect", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                DataModel.ref().currentAnswer().setCorrect(false);
-                endQuestion();
-            }
+        pedagogicDialog.setNegativeButton("Incorrect", (dialog, whichButton) -> {
+            DataModel.ref().currentAnswer().setCorrect(false);
+            endQuestion();
         });
-        pedagogicDialog.setPositiveButton("Correct", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int whichButton) {
-                DataModel.ref().currentAnswer().setCorrect(true);
-                endQuestion();
-            }
+        pedagogicDialog.setPositiveButton("Correct", (dialog, whichButton) -> {
+            DataModel.ref().currentAnswer().setCorrect(true);
+            endQuestion();
         });
     }
 
@@ -120,41 +114,13 @@ public class BoitierActivity extends Activity {
     }
 
     private void initializeListeners() { // TODO use onClick xml property instead?
-        buttonA.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                clickA();
-            }
-        });
-        buttonB.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                clickB();
-            }
-        });
-        buttonC.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                clickC();
-            }
-        });
-        buttonD.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                clickD();
-            }
-        });
-        buttonClear.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                clear();
-            }
-        });
-        buttonValidate.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                validate();
-            }
-        });
-        buttonHome.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        buttonA.setOnClickListener(v -> clickA());
+        buttonB.setOnClickListener(v -> clickB());
+        buttonC.setOnClickListener(v -> clickC());
+        buttonD.setOnClickListener(v -> clickD());
+        buttonClear.setOnClickListener(v -> clear());
+        buttonValidate.setOnClickListener(v -> validate());
+        buttonHome.setOnClickListener(v -> finish());
     }
 
     // View management
