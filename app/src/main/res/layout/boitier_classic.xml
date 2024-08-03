@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/boitier_area_classic"
-        android:contentDescription="background" />
+        android:contentDescription="@string/background" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/textLayout"
@@ -212,7 +212,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:contentDescription="return to home"
+        android:contentDescription="@string/return_to_home"
         android:background="@drawable/ic_home"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

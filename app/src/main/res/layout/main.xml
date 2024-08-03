@@ -1,57 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="20dp"
+    android:paddingRight="30dp">
 
-    <LinearLayout
+    <TextView
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="@string/app_name" />
+
+    <Button
+        android:id="@+id/buttonContinue"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingLeft="30dp"
-        android:paddingTop="20dp"
-        android:paddingRight="30dp">
+        android:layout_height="wrap_content"
+        android:text="@string/Home_ButtonContinue" />
 
-        <TextView
-            style="@style/Title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:text="@string/app_name" />
+    <Button
+        android:id="@+id/buttonResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Home_ButtonResults" />
 
-        <Button
-            android:id="@+id/buttonContinue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Home_ButtonContinue" />
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Home_ButtonStart" />
 
-        <Button
-            android:id="@+id/buttonResults"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Home_ButtonResults" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
 
-        <Button
-            android:id="@+id/buttonStart"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Home_ButtonStart" />
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Home_ButtonSettings" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="15dp" />
-
-        <Button
-            android:id="@+id/buttonSettings"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Home_ButtonSettings" />
-
-        <Button
-            android:id="@+id/buttonHelp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Home_ButtonHelp" />
-    </LinearLayout>
-
-</RelativeLayout>
+    <Button
+        android:id="@+id/buttonHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Home_ButtonHelp" />
+</LinearLayout>

@@ -26,5 +26,7 @@
     <string name="helpActivityTitle">Aide</string>
     <string name="settingsActivityTitle">Options</string>
     <string name="resultsActivityTitle">Résultats</string>
+    <string name="return_to_home">Retour au menu</string>
+    <string name="background">image du boitier</string>
 
 </resources>
